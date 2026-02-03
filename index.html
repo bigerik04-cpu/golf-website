@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golf Basics</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!-- HEADER: page title + quick intro -->
-  <header>
+  <header id="main-header">
     <h1>Golf Basics</h1>
     <p><!-- This paragraph introduces the website topic -->
       This website is about golf: the basics, practice tips, and my favorite clubs.
@@ -17,8 +18,11 @@
   </header>
 
   <!-- MAIN: the main content of the page -->
-  <main>
-    <!-- SECTION: groups related content together -->
+<main>
+
+  <!-- FLEXBOX CONTAINER -->
+  <div class="flex-container">
+
     <section>
       <h2>What is Golf?</h2>
       <p>
@@ -33,8 +37,14 @@
     <section>
       <h2>Basic Equipment</h2>
       <p>
-        These are the main items you’ll see golfers using on the course.
+        These are the main items you'll see golfers using on the course.
       </p>
+      <!-- your list stays here -->
+    </section>
+
+  </div>
+
+</main>
 
       <!-- UNORDERED LIST requirement -->
       <h3>Must-have items (Unordered List)</h3>
@@ -64,18 +74,17 @@
     </section>
 
     <section>
-      <h2>Golf Image</h2>
-      <p>
-        Here’s a golf photo from my website folder. This uses a relative path.
-      </p>
+  <h2>Golf Image</h2>
+  <p>Here's a golf photo from my website folder. This uses a relative path.</p>
 
-      <!-- IMAGE requirement: relative path + alt + width -->
-      <img src="images/golf-swing.jpg" alt="A golfer swinging a club on a course" width="400">
-    </section>
+  <img src="images/golf-swing.jpg"
+       alt="A golfer swinging a club on a course"
+       width="300">
+</section>
   </main>
 
   <!-- FOOTER: includes internal link to the other page -->
-  <footer>
+  <footer id="main-footer">
     <p>
       <!-- INTERNAL LINK requirement (one in each file) -->
       <a href="page2.html">Read more on Page 2</a>

@@ -1,0 +1,41 @@
+/* TAG-BASED STYLES */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ID STYLES */
+#main-header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+}
+
+#main-footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* FLEXBOX LAYOUT */
+.flex-container {
+  display: flex;
+  gap: 30px;
+}
+
+.flex-container section {
+  flex: 1;
+}
