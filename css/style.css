@@ -21,15 +21,37 @@ p {
   color: white;
   padding: 20px;
 }
-
-#main-footer {
-  background-color: #1b5e20;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+/* Header is dark green, so make links white for contrast */
+#main-header a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
+#main-header a:visited {
+  color: #ffffff;
+}
+
+#main-header a:hover {
+  color: #ffffff;
+}
+
+/* FOOTER STYLES (fix contrast) */
+#main-footer {
+  background-color: #0a3d0a; /* dark green */
+  color: #ffffff;
+  padding: 16px;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #ffffff; /* make links white */
+  font-weight: bold;
+  text-decoration: underline;
+}
+footer a {
+  color: #ffffff;  /* make links white */
+}
 /* FLEXBOX LAYOUT */
 .flex-container {
   display: flex;
@@ -38,4 +60,71 @@ p {
 
 .flex-container section {
   flex: 1;
+}
+/* Make text readable + high contrast */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #111111;
+  margin: 0;
+}
+
+/* Add spacing so content isn't glued to edges */
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Make links clear */
+a {
+  color: #0b3d91;
+}
+
+/* Keyboard focus (accessibility) */
+a:focus {
+  outline: 3px solid #ffbf00;
+  outline-offset: 3px;
+}
+
+/* Skip link: hidden until focused */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: #111111;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* REQUIRED: Media query for smaller screens */
+@media (max-width: 600px) {
+  header, main, footer {
+    padding: 12px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px 0;
+  }
+
+  img {
+    width: 100%;
+  }
 }
